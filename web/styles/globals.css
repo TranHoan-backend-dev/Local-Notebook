@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+	--font-sans: "font", sans-serif;
+	--font-mono: "monospace", monospace;
+
+	--color-grid-bg: #ffffff;
+	--color-grid-text: #374151;
+	--color-grid-link: #2563eb;
+}
+
+html,
+body {
+  font-size: 13px;
+}
