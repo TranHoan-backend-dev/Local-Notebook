@@ -42,3 +42,26 @@ This project is indexed by GitNexus as **Local-Notebook** (6 symbols, 1 relation
 | Index, status, clean, wiki CLI commands | `.ai/skills/gitnexus/gitnexus-cli/SKILL.md` |
 
 <!-- gitnexus:end -->
+
+---
+
+# Quy tắc & Quy chuẩn của Dự án Local-NotebookLM
+
+Tất cả các AI Coding Agents khi làm việc trên codebase này **BẮT BUỘC** phải đọc và tuân thủ các quy tắc chi tiết sau đây trước khi triển khai bất kỳ đoạn code nào:
+
+## 1. Định hướng & Scope Dự án
+
+- **Next.js/React + Electron (Desktop Shell) + FastAPI (Python Backend Sidecar)**.
+- Xây dựng hệ thống RAG offline local-first hỗ trợ tài liệu TXT, PDF, MD, HTML.
+- Sử dụng mô hình **Wiki-Enhanced / Hybrid RAG**: Tài liệu gốc là chân lý (`Source = Ground Truth`), lớp Wiki đóng vai trò là lớp tăng tốc ngữ nghĩa được tính toán trước (`Precomputed Semantic Layer`).
+
+## 2. Danh mục tài liệu Quy tắc chi tiết
+
+Để xem các quy tắc code chi tiết theo ngôn ngữ và công cụ, hãy truy cập các tệp tin cấu hình dưới đây:
+
+- [rules/01_scope_vision.md](file:///d:/Du_an_ca_nhan/Local-Notebook/.ai/rules/01_scope_vision.md): Định hướng sản phẩm, kiến trúc Wiki-Enhanced RAG, phân bổ context, và cơ chế an toàn `Evidence Confidence`.
+- [rules/02_python_conventions.md](file:///d:/Du_an_ca_nhan/Local-Notebook/.ai/rules/02_python_conventions.md): Quy chuẩn code Python (FastAPI, Type Hints, async/await, Pydantic, abstractions).
+- [rules/03_frontend_conventions.md](file:///d:/Du_an_ca_nhan/Local-Notebook/.ai/rules/03_frontend_conventions.md): Quy chuẩn code TS/JS, Next.js/React, Electron IPC, UI 3 cột, và bắt buộc thuộc tính `data-testid` để test UI.
+- [rules/04_ai_tooling.md](file:///d:/Du_an_ca_nhan/Local-Notebook/.ai/rules/04_ai_tooling.md): Quy tắc tận dụng GitNexus (impact analysis, detect_changes) và cấu hình hooks (`pre-flight` & `post-tool-use`).
+- [rules/access-control.md](file:///d:/Du_an_ca_nhan/Local-Notebook/.ai/rules/access-control.md): Quy chuẩn kiểm soát truy cập file local, bảo mật Electron, an toàn IPC và bảo mật localhost cho FastAPI backend.
+

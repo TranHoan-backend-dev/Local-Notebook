@@ -1,0 +1,29 @@
+{
+  "name": "local-notebook",
+  "private": true,
+  "scripts": {
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.0.0"
+  },
+  "lint-staged": {
+    "web/**/*.{ts,tsx}": [
+      "pnpm --filter web lint"
+    ],
+    "web/**/*.{ts,vue}": [
+      "pnpm --filter web lint"
+    ]
+  },
+  "onlyBuiltDependencies": [
+    "@parcel/watcher",
+    "@swc/core",
+    "@tailwindcss/oxide",
+    "core-js",
+    "core-js-pure",
+    "esbuild",
+    "sharp",
+    "unrs-resolver",
+    "yarn"
+  ]
+}
