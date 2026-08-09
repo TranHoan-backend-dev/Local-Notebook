@@ -24,7 +24,7 @@ Dự án sử dụng mô hình **Wiki-Enhanced / Hybrid RAG**:
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **Local-Notebook** (1961 symbols, 1974 relationships, 0 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **Local-Notebook** (1982 symbols, 1995 relationships, 0 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > Index stale? Run `node .gitnexus/run.cjs analyze` from the project root — it auto-selects an available runner. No `.gitnexus/run.cjs` yet? `npx gitnexus analyze` (npm 11 crash → `npm i -g gitnexus`; #1939).
 
@@ -47,7 +47,7 @@ This project is indexed by GitNexus as **Local-Notebook** (1961 symbols, 1974 re
 ## Resources
 
 | Resource | Use for |
-|----------|---------|
+| ---------- | --------- |
 | `gitnexus://repo/Local-Notebook/context` | Codebase overview, check index freshness |
 | `gitnexus://repo/Local-Notebook/clusters` | All functional areas |
 | `gitnexus://repo/Local-Notebook/processes` | All execution flows |
@@ -56,7 +56,7 @@ This project is indexed by GitNexus as **Local-Notebook** (1961 symbols, 1974 re
 ## CLI
 
 | Task | Read this skill file |
-|------|---------------------|
+| ------ | --------------------- |
 | Understand architecture / "How does X work?" | `.claude/skills/gitnexus/gitnexus-exploring/SKILL.md` |
 | Blast radius / "What breaks if I change X?" | `.claude/skills/gitnexus/gitnexus-impact-analysis/SKILL.md` |
 | Trace bugs / "Why is X failing?" | `.claude/skills/gitnexus/gitnexus-debugging/SKILL.md` |

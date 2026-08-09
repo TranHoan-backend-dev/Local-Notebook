@@ -1,15 +1,52 @@
 // Định nghĩa các gap và space dùng chung
 
-$gap_0: 4px;
-$gap_1: 8px;
-$gap_2: 12px;
-$gap_3: 16px;
-$gap_4: 24px;
+$space_4: 4px;
+$space_8: 8px;
+$space_10: 10px;
+$space_12: 12px;
+$space_16: 16px;
+$space_20: 20px;
+$space_22: 22px;
+$space_24: 24px;
+$space_32: 32px;
 
-$base_space: 4px;
-$normal_space: 8px;
-$normal_space_1: 10px;
-$medium_space: 12px;
-$medium_space_1: 16px;
-$large_space: 20px;
-$larger_space: 24px;
+$gap_0: $space_4;
+$gap_1: $space_8;
+$gap_2: $space_12;
+$gap_3: $space_16;
+$gap_4: $space_24;
+
+// Custom utility classes to override Tailwind's defaults
+.px-4 {
+    padding-left: $space_4 !important;
+    padding-right: $space_4 !important;
+}
+
+.py-4 {
+    padding-top: $space_4 !important;
+    padding-bottom: $space_4 !important;
+}
+
+.px-12 {
+    padding-left: $space_12 !important;
+    padding-right: $space_12 !important;
+}
+
+.py-12 {
+    padding-top: $space_12 !important;
+    padding-bottom: $space_12 !important;
+}
+
+.px-16 {
+    padding-left: $space_16 !important;
+    padding-right: $space_16 !important;
+}
+
+.py-16 {
+    padding-top: $space_16 !important;
+    padding-bottom: $space_16 !important;
+}
+
+.gap-8 {
+    gap: $space_8 !important;
+}

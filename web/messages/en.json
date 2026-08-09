@@ -1,0 +1,11 @@
+{
+  "popup": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close",
+    "expand": "Expand fullscreen",
+    "collapse": "Exit fullscreen",
+    "popup_label": "Popup dialog",
+    "sidebar_label": "Sidebar panel"
+  }
+}

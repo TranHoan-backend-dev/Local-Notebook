@@ -21,6 +21,7 @@
     "@tailwindcss/oxide",
     "core-js",
     "core-js-pure",
+    "electron-winstaller",
     "esbuild",
     "sharp",
     "unrs-resolver",
