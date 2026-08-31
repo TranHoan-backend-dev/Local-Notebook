@@ -1,0 +1,47 @@
+{
+    "mcpServers": {
+        "filesystem": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "./"
+            ],
+            "description": "Cho phép AI đọc và ghi file trong dự án"
+        },
+        "web-search": {
+            "command": "sh",
+            "args": [
+                "-c",
+                "export $(grep -v '^#' ../.env | xargs) && npx -y @modelcontextprotocol/server-google-search"
+            ],
+            "description": "Tìm kiếm web với API Key từ Root"
+        },
+        "agentmemory": {
+            "command": "pnpm",
+            "args": [
+                "dlx",
+                "@agentmemory/agentmemory"
+            ],
+            "description": "Persistent memory layer for AI agents"
+        },
+        "gitnexus": {
+            "command": "pnpm",
+            "args": [
+                "dlx",
+                "gitnexus",
+                "mcp"
+            ],
+            "description": "Codebase knowledge graph and code intelligence"
+        },
+        "project_rules": [
+            "./.ai/rules/*.md",
+            "./.ai/context/*.md",
+            "./.ai/agents/*.md"
+        ],
+        "behavior": {
+            "lazy_load_external_agents": true,
+            "primary_context_source": ".claude"
+        }
+    }
+}
