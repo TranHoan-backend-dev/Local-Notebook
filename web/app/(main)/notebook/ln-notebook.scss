@@ -1,0 +1,35 @@
+@use "../../../styles/custom/style.scss" as *;
+@use "../../../styles/custom/space.scss" as *;
+
+.notebook_layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #edeffa;
+    width: auto;
+}
+
+.notebook_content {
+    display: flex;
+    gap: $gap_3;
+    flex: 1;
+    min-height: 0;
+    margin-left: $space-16;
+    margin-right: $space_16;
+
+    .child {
+        flex: 1;
+        min-width: 0;
+    }
+}
+
+.notebook_header {
+    height: $space_64;
+    padding-left: $space_20;
+    padding-right: $space_20;
+}
+
+.notebook_footer {
+    height: $space_24;
+    color: light-dark(#303030,#c7c7c7);
+}

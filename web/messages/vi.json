@@ -1,0 +1,11 @@
+{
+  "popup": {
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "close": "Đóng",
+    "expand": "Phóng to",
+    "collapse": "Thu nhỏ",
+    "popup_label": "Hộp thoại",
+    "sidebar_label": "Khung trượt bên"
+  }
+}

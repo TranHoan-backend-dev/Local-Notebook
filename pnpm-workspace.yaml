@@ -1,0 +1,13 @@
+packages:
+  - "desktop"
+  - "web"
+allowBuilds:
+  "@parcel/watcher": true
+  "@swc/core": true
+  "@tailwindcss/oxide": true
+  "electron": true
+  "electron-winstaller": true
+  "esbuild": true
+  sharp: true
+  unrs-resolver: true
+

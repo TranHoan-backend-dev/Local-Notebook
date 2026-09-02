@@ -1,0 +1,53 @@
+.sources_sidebar_card {
+  max-width: 340px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #f3f4f6;
+  border-radius: 24px;
+
+  textarea {
+    border: none;
+    background: transparent;
+    font-size: 13.5px;
+    line-height: 1.5;
+    font-family: inherit;
+
+    &::placeholder {
+      color: #9ca3af;
+    }
+  }
+
+  // Custom styling for groups and list items
+  .group-header {
+    border-radius: 12px;
+  }
+
+  // Sub-items indent hover style
+  .pl-6 {
+    border-left: 1px dashed #e5e7eb;
+    margin-left: 16px;
+    padding-left: 16px;
+  }
+
+  // Hover transitions
+  .transition-colors {
+    transition: background-color 0.15s ease-in-out;
+  }
+
+  .sidebar_header {
+    height: 52px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .search_box_container {
+    background-color: light-dark(#f9f9f9,#1a1d22);
+  }
+}
+
+.card {
+  gap: unset;
+  padding: unset;
+}
